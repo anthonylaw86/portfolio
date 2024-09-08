@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Alegreya";
+  src: url("../src/vendors/AlegreyaSansSC-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background: #161513;
+  color: white;
+  font-family: "Alegreya";
+}
