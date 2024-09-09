@@ -1,13 +1,14 @@
 import React from "react";
 import "./About.css";
 import self from "../../../assets/self_cropped.png";
+import icon from "../../../assets/icon.png";
 
 const About = () => {
   return (
     <div className="about">
       <div className="about-title">
         <h1>About me</h1>
-        <img src="" alt="" />
+        <img src={icon} alt="theme pattern" />
       </div>
       <div className="about-sections">
         <div className="about-left">
@@ -60,6 +61,22 @@ const About = () => {
               <hr style={{ width: "50%" }} />
             </div>
           </div>
+        </div>
+      </div>
+      <div className="about-achievements">
+        <div className="about-achievement">
+          <h1>4+</h1>
+          <p>Years of management experience</p>
+        </div>
+        <hr />
+        <div className="about-achievement">
+          <h1>8</h1>
+          <p>Years of hospitality industry</p>
+        </div>
+        <hr />
+        <div className="about-achievement">
+          <h1>Always</h1>
+          <p>Striving for better</p>
         </div>
       </div>
     </div>
