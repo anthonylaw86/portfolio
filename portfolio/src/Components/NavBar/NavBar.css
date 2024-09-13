@@ -12,8 +12,8 @@
 }
 
 .navbar-logo {
-  max-height: 100px;
-  max-width: 100px;
+  height: 125px;
+  width: auto;
 }
 
 .nav-menu {
@@ -21,14 +21,14 @@
   align-items: center;
   list-style: none;
   gap: 60px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .nav-connect {
   padding: 20px 40px;
   border-radius: 50px;
   background: linear-gradient(267deg, #5d6767 0.75%, #68d2df 102.06%);
-  font-size: 22px;
+  font-size: 28px;
   cursor: pointer;
   transition: 0.5s;
 }

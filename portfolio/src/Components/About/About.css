@@ -11,13 +11,13 @@
   position: relative;
 }
 
-.about-title h1 {
+.about-title_h1 {
   padding: 0px 30px;
   font-size: 80px;
   font-weight: 600;
 }
 
-.about-title img {
+.about-title_img {
   position: absolute;
   bottom: -20px;
   right: 80px;
@@ -32,8 +32,8 @@
   gap: 80px;
 }
 
-.about-sections img {
-  width: 600px;
+.about-sections_img {
+  width: 616px;
   height: auto;
 }
 
@@ -47,7 +47,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
 }
 
@@ -64,13 +64,13 @@
   transition: 0.3s;
 }
 
-.about-skill p {
+.about-skill_p {
   min-width: 150px;
   font-size: 24px;
   font-weight: 500;
 }
 
-.about-skill hr {
+.about-skill_hr {
   outline: none;
   border: none;
   width: 50%;
@@ -94,7 +94,7 @@
   transition: 0.5s;
 }
 
-.about-achievement h1 {
+.about-achievement_h1 {
   font-size: 60px;
   font-weight: 700;
   background: linear-gradient(267deg, #5d6767 50.41%, #68d2df 90.28%);
@@ -103,7 +103,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.about-achievement p {
+.about-achievement_p {
   font-size: 22px;
   font-weight: 500;
 }

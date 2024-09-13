@@ -7,12 +7,12 @@ const About = () => {
   return (
     <div className="about">
       <div className="about-title">
-        <h1>About me</h1>
-        <img src={icon} alt="theme pattern" />
+        <h1 className="about-title_h1">About me</h1>
+        <img className="about-title_img" src={icon} alt="theme pattern" />
       </div>
       <div className="about-sections">
         <div className="about-left">
-          <img src={self} alt="self" />
+          <img className="about-sections_img" src={self} alt="self" />
         </div>
         <div className="about-right">
           <div className="about-para">
@@ -45,38 +45,38 @@ const About = () => {
           </div>
           <div className="about-skills">
             <div className="about-skill">
-              <p>HTML & CSS</p>
-              <hr style={{ width: "50%" }} />
+              <p className="about-skill_p">HTML & CSS</p>
+              <hr className="about-skill_hr" style={{ width: "50%" }} />
             </div>
             <div className="about-skill">
-              <p>React JS</p>
-              <hr style={{ width: "70%" }} />
+              <p className="about-skill_p">React JS</p>
+              <hr className="about-skill_hr" style={{ width: "70%" }} />
             </div>
             <div className="about-skill">
-              <p>Express</p>
-              <hr style={{ width: "60%" }} />
+              <p className="about-skill_p">Express</p>
+              <hr className="about-skill_hr" style={{ width: "60%" }} />
             </div>
             <div className="about-skill">
-              <p>JavaScript</p>
-              <hr style={{ width: "50%" }} />
+              <p className="about-skill_p">JavaScript</p>
+              <hr className="about-skill_hr" style={{ width: "50%" }} />
             </div>
           </div>
         </div>
       </div>
       <div className="about-achievements">
         <div className="about-achievement">
-          <h1>4+</h1>
-          <p>Years of management experience</p>
+          <h1 className="about-achievement_h1">4+</h1>
+          <p className="about-achievement_p">Years of management experience</p>
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>8</h1>
-          <p>Years of hospitality industry</p>
+          <h1 className="about-achievement_h1">8</h1>
+          <p className="about-achievement_p">Years of hospitality industry</p>
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>Always</h1>
-          <p>Striving for better</p>
+          <h1 className="about-achievement_h1">Always</h1>
+          <p className="about-achievement_p">Striving for better</p>
         </div>
       </div>
     </div>

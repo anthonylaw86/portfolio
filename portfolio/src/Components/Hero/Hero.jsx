@@ -5,12 +5,12 @@ import self from "../../../assets/self_cropped.png";
 const Hero = () => {
   return (
     <div className="hero">
-      <img src={self} alt="self" />
-      <h1>
+      <img className="hero_img" src={self} alt="self" />
+      <h1 className="hero_h1">
         <span>Hey I'm Anthony, </span> a full-stack developer with a primary
         focus in React & Express.
       </h1>
-      <p>
+      <p className="hero_p">
         I am a full-stack developer located in Salt Lake, looking to break into
         tech. Excited to work with you & continue to learn & grow.
       </p>

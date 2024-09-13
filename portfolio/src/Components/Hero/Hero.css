@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-.hero img {
+.hero_img {
   margin: 0;
   border-radius: 50%;
   padding: 0;
@@ -16,21 +16,21 @@
   height: auto;
 }
 
-.hero h1 {
+.hero_h1 {
   text-align: center;
   width: 70%;
   font-size: 75px;
   font-weight: 600;
 }
 
-.hero h1 span {
+.hero_h1 span {
   background: linear-gradient(267deg, #5d6767 0.75%, #68d2df 102.06%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.hero p {
+.hero_p {
   width: 50%;
   text-align: center;
   font-size: 24px;
