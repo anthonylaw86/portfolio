@@ -7,7 +7,7 @@ import location from "../../../assets/location1.svg";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <div className="contact-title">
         <h1 className="contact-title_h1">Get in touch</h1>
         <svg

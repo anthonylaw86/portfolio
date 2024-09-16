@@ -4,7 +4,7 @@ import self from "../../../assets/self_cropped.png";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div id="home" className="hero">
       <img className="hero_img" src={self} alt="self" />
       <h1 className="hero_h1">
         <span>Hey I'm Anthony, </span> a full-stack developer with a primary
@@ -15,7 +15,11 @@ const Hero = () => {
         tech. Excited to work with you & continue to learn & grow.
       </p>
       <div className="hero-action">
-        <div className="hero-connect">Connect with me</div>
+        <div className="hero-connect">
+          <a className="anchor-link" offset={50} href="#contact">
+            Connect with me
+          </a>
+        </div>
         <div className="hero-resume">My resume</div>
       </div>
     </div>

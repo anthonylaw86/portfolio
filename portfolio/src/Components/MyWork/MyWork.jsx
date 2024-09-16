@@ -5,7 +5,7 @@ import rightArrow from "../../../assets/right-arrow-next-svgrepo-com.svg";
 
 const MyWork = () => {
   return (
-    <div className="mywork">
+    <div id="work" className="mywork">
       <div className="mywork-title">
         <h1 className="mywork-title_h1">My latest work</h1>
         <svg

@@ -6,7 +6,7 @@ import swoosh from "../../../assets/noun-swoosh-6638987.svg";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="about-title">
         <h1 className="about-title_h1">About me</h1>
         <svg
