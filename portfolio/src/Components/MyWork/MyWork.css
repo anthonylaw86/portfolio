@@ -16,6 +16,15 @@
   font-size: 80px;
   font-weight: 600;
 }
+.mywork-title_img {
+  position: absolute;
+  bottom: -215px;
+  right: 120px;
+  z-index: -1;
+  width: 200px;
+  height: auto;
+  opacity: 0.6;
+}
 
 .mywork-container {
   display: grid;
