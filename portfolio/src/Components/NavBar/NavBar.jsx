@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./NavBar.css";
 import logo from "../../../assets/logo.png";
-import swoosh from "../../../assets/noun-swoosh-6638987.svg";
+import swoosh from "../../../assets/half.swoosh.svg";
 
 const NavBar = () => {
   const [menu, setMenu] = useState("home");
