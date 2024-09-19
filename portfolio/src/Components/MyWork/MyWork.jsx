@@ -3,7 +3,7 @@ import "./MyWork.css";
 import mywork_data from "../../../assets/mywork_data";
 import rightArrow from "../../../assets/right-arrow-next-svgrepo-com.svg";
 
-const MyWork = () => {
+const MyWork = ({ onCardClick }) => {
   const gitHub = () => {
     window.open("https://github.com/anthonylaw86", "_blank");
   };
@@ -75,10 +75,13 @@ const MyWork = () => {
         {mywork_data.map((work, index) => {
           return (
             <img
+              onClick={() => {
+                onCardClick(work);
+              }}
               className="mywork-container_img"
               key={index}
               src={work.work_image}
-              alt="Around US"
+              alt="project"
             />
           );
         })}
