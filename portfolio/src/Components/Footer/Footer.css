@@ -100,3 +100,26 @@
     margin-bottom: 50px;
   }
 }
+
+@media (max-width: 670px) {
+  .footer-bottom {
+    font-size: 12px;
+  }
+
+  .footer-form {
+    flex-direction: column;
+  }
+  .footer-subscribe {
+    font-size: 12px;
+  }
+  .footer-email-input_input {
+    font-size: 12px;
+  }
+  .footer-top {
+    align-items: center;
+  }
+
+  .footer-bottom {
+    align-items: center;
+  }
+}

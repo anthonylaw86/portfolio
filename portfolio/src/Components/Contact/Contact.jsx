@@ -44,7 +44,7 @@ const Contact = () => {
           viewBox="0 0 2000 2500"
           enableBackground="new 0 0 2000 2000"
           xmlSpace="preserve"
-          style={{ width: 300, height: "auto" }}
+          // style={{ width: 300, height: "auto" }}
         >
           <defs>
             <linearGradient id="gradient1" x1="100%" y1="0%" x2="0%" y2="0%">

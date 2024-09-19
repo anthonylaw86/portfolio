@@ -24,8 +24,8 @@
 
 .contact-title_img {
   position: absolute;
-  bottom: -175px;
-  right: 85px;
+  bottom: -140px;
+  right: 105px;
   z-index: -1;
   width: 225px;
   height: auto;
@@ -146,8 +146,10 @@
   }
 
   .contact-title_img {
-    width: 130px;
-    margin-right: -20px;
+    height: 200px;
+    width: auto;
+    bottom: -105px;
+    right: 50px;
   }
 
   .contact-section {
