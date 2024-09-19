@@ -3,6 +3,13 @@ import "./Hero.css";
 import self from "../../../assets/self_cropped.png";
 
 const Hero = () => {
+  const openResume = () => {
+    window.open(
+      "https://docs.google.com/document/d/10gx1wQRE1UBsRXQGxHkaiLc_KepsJh8L/edit?usp=sharing&ouid=100622874604305250875&rtpof=true&sd=true",
+      "_blank"
+    );
+  };
+
   return (
     <div id="home" className="hero">
       <img className="hero_img" src={self} alt="self" />
@@ -20,7 +27,9 @@ const Hero = () => {
             Connect with me
           </a>
         </div>
-        <div className="hero-resume">My resume</div>
+        <button onClick={openResume} className="hero-resume">
+          My resume
+        </button>
       </div>
     </div>
   );

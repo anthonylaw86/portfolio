@@ -26,6 +26,11 @@
   gap: 35px;
 }
 
+.footer-form {
+  display: flex;
+  gap: 20px;
+}
+
 .footer-email-input {
   display: flex;
   gap: 30px;
@@ -77,4 +82,21 @@
 .footer-subscribe:hover {
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin: 50px 70px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
 }

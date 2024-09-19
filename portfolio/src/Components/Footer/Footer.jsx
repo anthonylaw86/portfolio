@@ -1,9 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 import fullLogo from "../../../assets/full.logo.png";
 import user from "../../../assets/user.svg";
 
 const Footer = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "8da0e542-818e-46cd-9669-e8a476d06111");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+      alert(data.message);
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className="footer">
       <div className="footer-top">
@@ -11,19 +37,23 @@ const Footer = () => {
           <img className="footer-top-left_img" src={fullLogo} alt="Full Logo" />
         </div>
         <div className="footer-top-right">
-          <div className="footer-email-input">
-            <img
-              src={user}
-              alt="email icon"
-              className="footer-email-input_img"
-            />
-            <input
-              className="footer-email-input_input"
-              type="email"
-              placeholder="Enter your email"
-            />
-          </div>
-          <div className="footer-subscribe">Subscribe</div>
+          <form onSubmit={onSubmit} className="footer-form">
+            <div className="footer-email-input">
+              <img
+                src={user}
+                alt="email icon"
+                className="footer-email-input_img"
+              />
+              <input
+                className="footer-email-input_input"
+                type="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <button type="submit" className="footer-subscribe">
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
       <hr />

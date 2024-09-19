@@ -4,6 +4,10 @@ import mywork_data from "../../../assets/mywork_data";
 import rightArrow from "../../../assets/right-arrow-next-svgrepo-com.svg";
 
 const MyWork = () => {
+  const gitHub = () => {
+    window.open("https://github.com/anthonylaw86", "_blank");
+  };
+
   return (
     <div id="work" className="mywork">
       <div className="mywork-title">
@@ -83,7 +87,7 @@ const MyWork = () => {
           );
         })}
       </div>
-      <div className="mywork-showmore">
+      <div onClick={gitHub} className="mywork-showmore">
         <p>Show More</p>
         <img
           className="mywork-showmore_img"

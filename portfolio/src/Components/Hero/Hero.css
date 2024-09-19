@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Alegreya";
+  src: url("../../../vendors/AlegreyaSansSC-Regular.ttf");
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -62,6 +67,10 @@
   border-radius: 50px;
   border: 2px solid #fff;
   cursor: pointer;
+  background: none;
+  color: white;
+  font-family: "Alegreya";
+  font-size: 24px;
 }
 
 .hero-resume:hover {
