@@ -1,16 +1,33 @@
-import React from "react";
-import { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./NavBar.css";
 import logo from "../../../assets/logo.png";
 import swoosh from "../../../assets/half.swoosh.svg";
+import menuIcon from "../../../assets/menu-bars.svg";
+import xIcon from "../../../assets/close-icon.svg";
 
 const NavBar = () => {
   const [menu, setMenu] = useState("home");
+  const menuRef = useRef();
+
+  const openMenu = () => {
+    menuRef.current.style.right = "0";
+  };
+
+  const closeMenu = () => {
+    menuRef.current.style.right = "-350px";
+  };
 
   return (
     <div className="navbar">
       <img src={logo} alt="logo" className="navbar-logo" />
-      <ul className="nav-menu">
+      <img
+        src={menuIcon}
+        onClick={openMenu}
+        alt="menu icon"
+        className="nav-mob-open"
+      />
+      <ul ref={menuRef} className="nav-menu">
+        <img src={xIcon} onClick={closeMenu} alt="" className="nav-mob-close" />
         <li>
           <a className="anchor-link" href="#home">
             <p onClick={() => setMenu("home")}>Home</p>
