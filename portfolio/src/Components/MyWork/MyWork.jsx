@@ -23,10 +23,8 @@ const MyWork = () => {
           xmlSpace="preserve"
           style={{ width: 300, height: "auto" }}
         >
-          {/* Define the linear gradient */}
           <defs>
             <linearGradient id="gradient1" x1="100%" y1="0%" x2="0%" y2="0%">
-              {/* Adjusted color stops */}
               <stop
                 offset="0%"
                 style={{ stopColor: "#5d6767", stopOpacity: 1 }}
@@ -38,9 +36,8 @@ const MyWork = () => {
             </linearGradient>
           </defs>
 
-          {/* Apply the gradient to the path's fill */}
           <path
-            fill="url(#gradient1)" // Reference the gradient by its ID
+            fill="url(#gradient1)"
             d="M1658.521,472.265c93.07,61.928,154.628,103.417,88.775,223.009  
           c-109.566,198.973-722.723,36.977-920.529,2.078c-211.039-37.233-576.332-128.943-643.958,160.521  
           c-49.61,212.352,136.548,331.546,338.856,311.909c179.833-17.462,770.364-151.3,919.52-105.622  
@@ -52,7 +49,6 @@ const MyWork = () => {
           C1858.877,591.646,1808.295,481.479,1658.521,472.265z"
           />
 
-          {/* Optional: Text at the bottom */}
           <text
             x="0"
             y="2015"
