@@ -1,6 +1,6 @@
-import beatApp from "../assets/beatApp.1.png";
-import aroundUS from "../assets/aroundTheUS.1.png";
-import wtwr from "../assets/WTWR.2.png";
+import beatApp from "./beatApp.1.png";
+import aroundUS from "./aroundTheUS.1.png";
+import wtwr from "./WTWR.2.png";
 
 const mywork_data = [
   {
