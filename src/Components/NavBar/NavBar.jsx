@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./NavBar.css";
 import logo from "../../../assets/logo.png";
-import swoosh from "../../../assets/half.swoosh.svg";
 import menuIcon from "../../../assets/menu-bars.svg";
 import xIcon from "../../../assets/close-icon.svg";
 import icon from "../../../assets/pikaso.png";
