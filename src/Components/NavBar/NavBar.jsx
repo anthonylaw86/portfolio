@@ -4,6 +4,7 @@ import logo from "../../../assets/logo.png";
 import swoosh from "../../../assets/half.swoosh.svg";
 import menuIcon from "../../../assets/menu-bars.svg";
 import xIcon from "../../../assets/close-icon.svg";
+import icon from "../../../assets/pikaso.png";
 
 const NavBar = () => {
   const [menu, setMenu] = useState("home");
@@ -32,25 +33,25 @@ const NavBar = () => {
           <a className="anchor-link" href="#home">
             <p onClick={() => setMenu("home")}>Home</p>
           </a>
-          {menu === "home" ? <img src={swoosh} alt="" /> : <></>}
+          {menu === "home" ? <img src={icon} alt="" /> : <></>}
         </li>
         <li>
           <a className="anchor-link" offset={50} href="#about">
             <p onClick={() => setMenu("about")}>About Me</p>
           </a>
-          {menu === "about" ? <img src={swoosh} alt="" /> : <></>}
+          {menu === "about" ? <img src={icon} alt="" /> : <></>}
         </li>
         <li>
           <a className="anchor-link" offset={50} href="#work">
             <p onClick={() => setMenu("work")}>Portfolio</p>
           </a>
-          {menu === "work" ? <img src={swoosh} alt="" /> : <></>}
+          {menu === "work" ? <img src={icon} alt="" /> : <></>}
         </li>
         <li>
           <a className="anchor-link" offset={50} href="#contact">
             <p onClick={() => setMenu("contact")}>Contact</p>
           </a>
-          {menu === "contact" ? <img src={swoosh} alt="" /> : <></>}
+          {menu === "contact" ? <img src={icon} alt="" /> : <></>}
         </li>
       </ul>
       <div className="nav-connect">

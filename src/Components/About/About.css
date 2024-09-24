@@ -19,12 +19,12 @@
 
 .about-title_img {
   position: absolute;
-  bottom: -140px;
-  right: 60px;
+  bottom: 0px;
+  right: 10px;
   z-index: -1;
-  width: 230px;
-  height: auto;
-  opacity: 0.6;
+  width: 350px;
+  height: 100px;
+  opacity: 0.75;
 }
 
 .about-sections {
@@ -131,10 +131,10 @@
   }
 
   .about-title_img {
-    width: 160px;
+    width: 210px;
     height: auto;
-    right: 10px;
-    bottom: -110px;
+    right: -10px;
+    bottom: -5px;
   }
 
   .about-sections {

@@ -18,12 +18,12 @@
 }
 .mywork-title_img {
   position: absolute;
-  bottom: -200px;
-  right: 120px;
+  bottom: -10px;
+  right: 20px;
   z-index: -1;
-  width: 300px;
-  height: auto;
-  opacity: 0.6;
+  width: 540px;
+  height: 120px;
+  opacity: 0.75;
 }
 
 .mywork-container {
@@ -86,10 +86,10 @@
   }
 
   .mywork-title_img {
-    width: 170px;
-    height: auto;
-    right: 70px;
-    bottom: -110px;
+    width: 300px;
+    height: 80px;
+    right: 10px;
+    bottom: -10px;
   }
 
   .mywork-container {

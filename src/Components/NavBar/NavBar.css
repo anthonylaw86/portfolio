@@ -48,8 +48,8 @@
 .nav-menu li img {
   display: flex;
   position: absolute;
-  bottom: -111px;
-  height: 180px;
+  bottom: -5px;
+  height: 45px;
   width: auto;
   align-self: center;
   z-index: -1;

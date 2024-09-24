@@ -24,12 +24,12 @@
 
 .contact-title_img {
   position: absolute;
-  bottom: -140px;
-  right: 105px;
+  bottom: -5px;
+  right: 5px;
   z-index: -1;
-  width: 225px;
-  height: auto;
-  opacity: 0.45;
+  width: 470px;
+  height: 110px;
+  opacity: 0.75;
 }
 
 .contact-section {
@@ -146,10 +146,10 @@
   }
 
   .contact-title_img {
-    height: 200px;
-    width: auto;
-    bottom: -105px;
-    right: 50px;
+    height: 80px;
+    width: 280px;
+    bottom: -5px;
+    right: -10px;
   }
 
   .contact-section {

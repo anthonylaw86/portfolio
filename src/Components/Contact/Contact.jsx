@@ -3,6 +3,7 @@ import "./Contact.css";
 import phone from "../../../assets/phone1.svg";
 import letter from "../../../assets/letter1.svg";
 import location from "../../../assets/location1.svg";
+import icon from "../../../assets/pikaso.png";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -35,7 +36,9 @@ const Contact = () => {
     <div id="contact" className="contact">
       <div className="contact-title">
         <h1 className="contact-title_h1">Get in touch</h1>
-        <svg
+        <img src={icon} alt="contact title img" className="contact-title_img" />
+
+        {/* <svg
           className="contact-title_img"
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -92,7 +95,7 @@ const Contact = () => {
           >
             from the Noun Project
           </text>
-        </svg>
+        </svg> */}
       </div>
       <div className="contact-section">
         <div className="contact-left">
