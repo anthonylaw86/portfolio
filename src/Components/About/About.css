@@ -33,8 +33,10 @@
 }
 
 .about-sections_img {
-  width: 616px;
-  height: auto;
+  /* width: 616px;
+  height: auto; */
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .about-right {
