@@ -105,7 +105,7 @@
 }
 
 .contact-right_textarea {
-  width: 650px;
+  width: 670px;
   border: none;
   padding: 25px;
   border-radius: 4px;
@@ -132,11 +132,11 @@
   transition: 0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
   .contact {
     gap: 50px;
     margin: 50px 70px;
-    align-items: start;
+    align-items: center;
   }
 
   .contact-title_h1 {

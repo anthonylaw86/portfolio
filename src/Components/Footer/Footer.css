@@ -4,10 +4,16 @@
 }
 
 .footer {
-  margin: 50px 170px;
+  margin: 50px 170px 0px 170px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  min-height: 100px;
+  max-height: 200px;
+  padding: 0px;
+  overflow: hidden;
+  z-index: 10;
+  background-color: #161513;
 }
 
 .footer-top {
@@ -67,6 +73,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+  height: 50px;
 }
 
 .footer-bottom-right {

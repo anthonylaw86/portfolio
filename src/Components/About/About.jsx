@@ -1,11 +1,12 @@
 import React from "react";
 import "./About.css";
-import self from "../../../assets/self_cropped.png";
+import self from "../../../assets/january.png";
 import icon from "../../../assets/pikaso.png";
+import PropTypes from "prop-types";
 
-const About = () => {
+const About = ({ className }) => {
   return (
-    <div id="about" className="about">
+    <div id="about" className={`about ${className}`}>
       <div className="about-title">
         <h1 className="about-title_h1">About me</h1>
         <img src={icon} alt="about title img" className="about-title_img" />
@@ -85,6 +86,10 @@ const About = () => {
       </div>
     </div>
   );
+};
+
+About.propTypes = {
+  className: PropTypes.string,
 };
 
 export default About;

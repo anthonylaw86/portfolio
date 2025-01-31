@@ -5,7 +5,7 @@ import letter from "../../../assets/letter1.svg";
 import location from "../../../assets/location1.svg";
 import icon from "../../../assets/pikaso.png";
 
-const Contact = () => {
+const Contact = ({ className }) => {
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
@@ -33,18 +33,18 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="contact">
+    <div id="contact" className={`contact ${className}`}>
       <div className="contact-title">
         <h1 className="contact-title_h1">Get in touch</h1>
         <img src={icon} alt="contact title img" className="contact-title_img" />
       </div>
       <div className="contact-section">
         <div className="contact-left">
-          <h1 className="contact-left_h1">Let's Talk</h1>
+          <h1 className="contact-left_h1">Let&apos;s Talk</h1>
           <p className="contact-left_p">
-            I'm open to new projects at the moment, so don't hesitate to reach
-            out if you have something in mind you'd like to work on. Feel free
-            to contact me anytime.
+            I&apos;m open to new projects at the moment, so don&apos;t hesitate
+            to reach out if you have something in mind you&apos;d like to work
+            on. Feel free to contact me anytime.
           </p>
           <div className="contact-details">
             <div className="contact-detail">
@@ -98,6 +98,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      {result && <p>{result}</p>}
     </div>
   );
 };

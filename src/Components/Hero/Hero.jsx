@@ -1,8 +1,9 @@
 import React from "react";
 import "./Hero.css";
 import self from "../../../assets/self_cropped.png";
+import PropTypes from "prop-types";
 
-const Hero = () => {
+const Hero = ({ className }) => {
   const openResume = () => {
     window.open(
       "https://docs.google.com/document/d/10gx1wQRE1UBsRXQGxHkaiLc_KepsJh8L/edit?usp=sharing&ouid=100622874604305250875&rtpof=true&sd=true",
@@ -11,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <div id="home" className="hero">
+    <div id="home" className={`hero ${className}`}>
       <img className="hero_img" src={self} alt="self" />
       <h1 className="hero_h1">
         <span>Hey I'm Anthony, </span> a full-stack developer with a primary
@@ -33,6 +34,10 @@ const Hero = () => {
       </div>
     </div>
   );
+};
+
+Hero.propTypes = {
+  className: PropTypes.string,
 };
 
 export default Hero;

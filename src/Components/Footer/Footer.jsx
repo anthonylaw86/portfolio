@@ -3,7 +3,7 @@ import "./Footer.css";
 import fullLogo from "../../../assets/full.logo.png";
 import user from "../../../assets/user.svg";
 
-const Footer = () => {
+const Footer = ({ className }) => {
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
@@ -31,7 +31,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="footer">
+    <div className={`footer ${className}`}>
       <div className="footer-top">
         <div className="footer-top-left">
           <img className="footer-top-left_img" src={fullLogo} alt="Full Logo" />

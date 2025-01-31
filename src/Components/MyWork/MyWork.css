@@ -28,16 +28,25 @@
 
 .mywork-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
+  padding: 50px;
+  width: 100%;
+  background-color: #68d2df60;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .mywork-container_img {
   box-sizing: border-box;
-  width: 419px;
-  height: 280px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 12;
   transition: 0.3s;
   cursor: pointer;
+  object-fit: fill;
+  object-position: center;
 }
 
 .mywork-container_img:hover {
@@ -99,7 +108,7 @@
 
   .mywork-container_img {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   .mywork-showmore {

@@ -22,12 +22,12 @@
   margin: auto;
   padding: 20px;
   width: 80%;
-  max-width: 100%;
+  max-width: 1000px;
   background-color: transparent;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .modal-content_img {
@@ -47,8 +47,11 @@
 }
 
 .modal-close_img {
-  width: 50px;
-  height: 50px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 10%;
 }
 
 .modal-close:hover {
@@ -56,13 +59,100 @@
 }
 
 .modal-project_img {
-  height: 80vh;
-  width: auto;
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.modal-arrow_left {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  z-index: 999;
+  bottom: 60px;
+  left: 10%;
+  transform: rotate(180deg);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal-arrow_right {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  z-index: 999;
+  bottom: 60px;
+  right: 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal-prev-btn img,
+.modal-next-btn img {
+  padding: 7px;
+}
+
+.modal-arrow_left:hover,
+.modal-arrow_right:hover {
+  background-color: aqua;
+  transition: 0.3s ease-in-out;
+}
+
+.image-counter {
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .modal-content {
     max-width: calc(100vh - 20%);
     max-height: calc(100vh - 20%);
+  }
+
+  .modal-project_img {
+    height: calc(100vh - 20%);
+    width: auto;
+  }
+
+  .modal-close_img {
+    transform: scale(0.75);
+
+    right: -5px;
+  }
+
+  .modal-arrow_left {
+    border: none;
+    background-color: transparent;
+    width: calc(30% - 20%);
+    height: calc(30% - 20%);
+  }
+
+  .modal-arrow_right {
+    border: none;
+    background-color: transparent;
+    width: calc(30% - 20%);
+    height: calc(30% - 20%);
+  }
+
+  .modal-prev-btn img,
+  .modal-next-btn img {
+    padding: 0px;
   }
 }

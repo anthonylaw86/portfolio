@@ -22,13 +22,19 @@ const App = () => {
 
   return (
     <>
-      <div>
+      <div className="snap-scroll-container">
         <NavBar />
-        <Hero />
-        <About />
-        <MyWork onCardClick={handleCardClick} />
-        <Contact />
-        <Footer />
+        <Hero className="snap-section" id="hero" />
+        <About className="snap-section" id="about" />
+        <MyWork
+          onCardClick={handleCardClick}
+          className="snap-section"
+          id="work"
+        />
+        <Contact className="snap-section" id="contact" />
+        <div className="snap-section">
+          <Footer className="footer" id="footer" />
+        </div>
       </div>
 
       {activeModal && (
