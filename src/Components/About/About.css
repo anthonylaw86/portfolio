@@ -199,17 +199,18 @@
 
   .about-achievements {
     display: none;
-}
-
-@media (max-width: 275px) {
-  .about-title_h1 {
-    font-size: 25px;
   }
 
-  .about-title_img {
-    width: 110px;
-    height: auto;
-    right: -5px;
-    bottom: -5px;
+  @media (max-width: 275px) {
+    .about-title_h1 {
+      font-size: 25px;
+    }
+
+    .about-title_img {
+      width: 110px;
+      height: auto;
+      right: -5px;
+      bottom: -5px;
+    }
   }
 }
