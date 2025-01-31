@@ -201,6 +201,10 @@
     width: 280px;
     height: 70px;
   }
+
+  .contact {
+    margin: 40px 70px;
+  }
 }
 
 @media (max-width: 400px) {
