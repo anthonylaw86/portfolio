@@ -45,6 +45,7 @@ const NavBar = ({ onNavigate }) => {
         <li>
           <Link to="about" smooth={true} duration={500}>
             <p
+              className="nav-link_about"
               onClick={() => {
                 setMenu("about");
                 onNavigate("about");
