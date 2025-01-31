@@ -37,7 +37,13 @@ body {
   scroll-snap-align: start;
   flex: 0 0 auto;
   min-height: calc(100vh - 60px);
-  padding-top: 120px;
+  max-height: 1000%;
+  padding: 0px;
+}
+
+.snap-section_footer {
+  margin: 0;
+  padding: 0;
 }
 
 .snap-section:last-child {

@@ -23,6 +23,7 @@
 .navbar-logo {
   height: 125px;
   width: auto;
+  margin-right: 40px;
 }
 
 .nav-menu {
@@ -40,6 +41,7 @@
   font-size: 28px;
   cursor: pointer;
   transition: 0.5s;
+  margin-left: 40px;
 }
 
 .nav-connect:hover {
@@ -77,9 +79,32 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1166px) {
+  .navbar-logo {
+    scale: 0.8;
+  }
+
   .navbar {
-    margin: 20px 50px;
+    margin: 20px 0px;
+    gap: 0px;
+  }
+}
+
+@media (max-width: 997px) {
+  .navbar {
+    margin: 20px 0px;
+    background-color: #161513;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-top: 0;
+  }
+
+  .navbar-logo {
+    scale: 0.6;
   }
 
   .nav-connect {

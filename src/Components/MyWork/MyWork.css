@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
-  margin: 80px 170px;
+  margin: 180px 170px;
 }
 
 .mywork-title {
@@ -81,11 +81,28 @@
   transition: 0.6s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
+  .mywork {
+    margin: 10px 70px;
+  }
+
+  .mywork-title_h1 {
+    font-size: 50px;
+  }
+
+  .mywork-title_img {
+    width: 360px;
+    height: 80px;
+    right: 10px;
+    bottom: -10px;
+  }
+}
+
+@media (max-width: 722px) {
   .mywork {
     gap: 50px;
-    margin: 50px 70px;
-    align-items: start;
+    margin: 10px 70px;
+    align-items: center;
   }
 
   .mywork-title_h1 {
@@ -116,5 +133,42 @@
     font-size: 18px;
     margin: 50px auto;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 462px) {
+  .mywork-title_h1 {
+    font-size: 40px;
+  }
+
+  .mywork-title_img {
+    width: 260px;
+    height: 60px;
+    right: -10px;
+    bottom: -10px;
+  }
+}
+
+@media (max-width: 398px) {
+  .mywork-title_h1 {
+    font-size: 30px;
+  }
+
+  .mywork-title_img {
+    width: 210px;
+    height: 50px;
+    bottom: -10px;
+  }
+}
+
+@media (max-width: 333px) {
+  .mywork-title_h1 {
+    font-size: 20px;
+  }
+
+  .mywork-title_img {
+    width: 150px;
+    height: 40px;
+    bottom: -10px;
   }
 }
