@@ -14,6 +14,7 @@ body {
   background: #161513;
   color: white;
   font-family: "Alegreya";
+  overflow: hidden;
 }
 
 .snap-scroll-container {
@@ -25,21 +26,30 @@ body {
   scroll-behavior: smooth;
 }
 
+.section {
+  flex: 0 0 auto;
+  min-height: 100vh;
+  padding-top: 60px;
+  scroll-margin-top: 60px;
+}
+
 .snap-section {
   scroll-snap-align: start;
   flex: 0 0 auto;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
+  padding-top: 120px;
 }
 
 .snap-section:last-child {
   scroll-snap-align: end;
   margin-bottom: 0px;
+  max-height: 100vh;
 }
 
 .footer {
   scroll-snap-align: end;
-  min-height: 220px;
-  max-height: 200px;
+  min-height: 280px;
+  max-height: 300px;
   padding: 20px;
   overflow: hidden;
   z-index: 10;

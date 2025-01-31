@@ -4,8 +4,9 @@ import logo from "../../../assets/logo.png";
 import menuIcon from "../../../assets/menu-bars.svg";
 import xIcon from "../../../assets/close-icon.svg";
 import icon from "../../../assets/pikaso.png";
+import { Link } from "react-scroll";
 
-const NavBar = () => {
+const NavBar = ({ onNavigate }) => {
   const [menu, setMenu] = useState("home");
   const menuRef = useRef();
 
@@ -29,34 +30,62 @@ const NavBar = () => {
       <ul ref={menuRef} className="nav-menu">
         <img src={xIcon} onClick={closeMenu} alt="" className="nav-mob-close" />
         <li>
-          <a className="anchor-link" href="#home">
-            <p onClick={() => setMenu("home")}>Home</p>
-          </a>
+          <Link to="home" smooth={true} duration={500}>
+            <p
+              onClick={() => {
+                setMenu("home");
+                onNavigate("hero");
+              }}
+            >
+              Home
+            </p>
+          </Link>
           {menu === "home" ? <img src={icon} alt="" /> : <></>}
         </li>
         <li>
-          <a className="anchor-link" offset={50} href="#about">
-            <p onClick={() => setMenu("about")}>About Me</p>
-          </a>
+          <Link to="about" smooth={true} duration={500}>
+            <p
+              onClick={() => {
+                setMenu("about");
+                onNavigate("about");
+              }}
+            >
+              About Me
+            </p>
+          </Link>
           {menu === "about" ? <img src={icon} alt="" /> : <></>}
         </li>
         <li>
-          <a className="anchor-link" offset={50} href="#work">
-            <p onClick={() => setMenu("work")}>Portfolio</p>
-          </a>
+          <Link to="work" smooth={true} duration={500}>
+            <p
+              onClick={() => {
+                setMenu("work");
+                onNavigate("work");
+              }}
+            >
+              Portfolio
+            </p>
+          </Link>
           {menu === "work" ? <img src={icon} alt="" /> : <></>}
         </li>
         <li>
-          <a className="anchor-link" offset={50} href="#contact">
-            <p onClick={() => setMenu("contact")}>Contact</p>
-          </a>
+          <Link to="contact" smooth={true} duration={500}>
+            <p
+              onClick={() => {
+                setMenu("contact");
+                onNavigate("contact");
+              }}
+            >
+              Contact
+            </p>
+          </Link>
           {menu === "contact" ? <img src={icon} alt="" /> : <></>}
         </li>
       </ul>
       <div className="nav-connect">
-        <a className="anchor-link" offset={50} href="#contact">
+        <Link to="contact" smooth={true} duration={500}>
           Connect With Me
-        </a>
+        </Link>
       </div>
     </div>
   );

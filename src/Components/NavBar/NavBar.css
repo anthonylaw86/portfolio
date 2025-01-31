@@ -4,10 +4,19 @@
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 10px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 20px 170px;
+  margin-bottom: 40px;
   font-family: "Alegreya";
 }
 
