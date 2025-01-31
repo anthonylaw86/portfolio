@@ -163,12 +163,13 @@
 
 @media (max-width: 333px) {
   .mywork-title_h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .mywork-title_img {
-    width: 150px;
-    height: 40px;
-    bottom: -10px;
+    width: 180px;
+    height: 42px;
+    bottom: -5px;
+    right: -8px;
   }
 }

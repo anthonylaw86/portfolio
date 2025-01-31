@@ -132,23 +132,31 @@
   }
 
   .modal-close_img {
-    transform: scale(0.75);
-
-    right: -5px;
+    transform: scale(45%);
+    right: -30px;
+    top: -40px;
   }
 
   .modal-arrow_left {
     border: none;
     background-color: transparent;
-    width: calc(30% - 20%);
-    height: calc(30% - 20%);
+    width: calc(8%);
+    height: calc(8%);
+  }
+
+  .modal-arrow_left:hover,
+  .modal-arrow_right:hover {
+    padding: 0px;
+    border-radius: 70%;
+    background-color: aqua;
   }
 
   .modal-arrow_right {
     border: none;
+    padding: 0px;
     background-color: transparent;
-    width: calc(30% - 20%);
-    height: calc(30% - 20%);
+    width: calc(8%);
+    height: calc(8%);
   }
 
   .modal-prev-btn img,
