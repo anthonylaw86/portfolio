@@ -6,8 +6,9 @@ const Fitness = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const categories = [
+    "All",
     ...new Set(fitnessPhotos.map((photo) => photo.category)),
-  ].filter((category) => category !== "Progress");
+  ];
 
   const filteredPhotos =
     selectedCategory === "All"

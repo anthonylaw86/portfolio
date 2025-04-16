@@ -33,7 +33,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "2024",
     caption: "Chest Pump",
-    category: "Progress",
+    category: "Upper Body",
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "2024",
     caption: "Summer Biceps",
-    category: "Progress",
+    category: "Upper Body",
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "2024",
     caption: "Boulder Shoulders",
-    category: "Progress",
+    category: "Upper Body",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "2024",
     caption: "RDLs",
-    category: "Progress",
+    category: "Weights",
   },
   {
     id: 6,
@@ -73,7 +73,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "2024",
     caption: "Chest & Bi's",
-    category: "Progress",
+    category: "Upper Body",
   },
   {
     id: 8,
@@ -81,7 +81,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "2024",
     caption: "Bedtime Arms",
-    category: "Progress",
+    category: "Upper Body",
   },
   {
     id: 9,
@@ -89,7 +89,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "2024",
     caption: "Deadlifts",
-    category: "Progress",
+    category: "Weights",
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "Fall 2024",
     caption: "Chest & Biceps",
-    category: "Progress",
+    category: "Upper Body",
   },
 
   {
@@ -122,7 +122,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "2024",
     caption: "Hip Thrusts",
-    category: "Progress",
+    category: "Weights",
   },
   {
     id: 15,
@@ -130,7 +130,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "Spring 2025",
     caption: "Chest & Bi's",
-    category: "Progress",
+    category: "Upper Body",
   },
   {
     id: 16,
@@ -138,7 +138,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "2025",
     caption: "Bench Press",
-    category: "Progress",
+    category: "Weights",
   },
   {
     id: 17,
@@ -146,7 +146,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "Spring 2025",
     caption: "Quads",
-    category: "Progress",
+    category: "Lower Body",
   },
   {
     id: 18,
@@ -154,7 +154,7 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "Spring 2025",
     caption: "Lat Day",
-    category: "Progress",
+    category: "Weights",
   },
   {
     id: 19,
@@ -170,6 +170,6 @@ export const fitnessPhotos = [
     alt: "Bodybuilding progress photo",
     date: "Spring 2025",
     caption: "Biceptasourus",
-    category: "Progress",
+    category: "Upper Body",
   },
 ];
