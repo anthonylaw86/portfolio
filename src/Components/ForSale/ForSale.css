@@ -1,0 +1,66 @@
+.for-sale-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.for-sale-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.coming-soon {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.coming-soon h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.coming-soon p {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.coming-soon a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.coming-soon a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .for-sale-container {
+    padding: 1rem;
+  }
+
+  .listings-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .coming-soon {
+    padding: 2rem 1rem;
+    margin: 1rem;
+  }
+}

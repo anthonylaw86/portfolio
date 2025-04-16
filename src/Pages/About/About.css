@@ -1,0 +1,250 @@
+.about-page {
+  min-height: 100vh;
+  background: var(--background-dark);
+  color: var(--text-light);
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  height: 400vh; /* Add space for scrolling */
+}
+
+.about-header {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+  transition: opacity 1s ease;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.about-content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-section {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1200px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  pointer-events: none;
+}
+
+.about-section.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Journey Section */
+.journey-section {
+  flex-direction: row;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+}
+
+.journey-image {
+  flex: 0.8;
+  position: relative;
+}
+
+.journey-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.journey-section:hover .journey-image img {
+  transform: scale(1);
+}
+
+/* Experience Section */
+.experience-section {
+  flex-direction: row;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+}
+
+.experience-image {
+  flex: 0.8;
+  position: relative;
+}
+
+.experience-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: grayscale(30%);
+  transition: filter 0.3s ease;
+}
+
+.experience-section:hover .experience-image img {
+  filter: grayscale(0%);
+}
+
+/* Interests Section */
+.interests-section {
+  flex-direction: row;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+}
+
+.interests-image {
+  flex: 0.8;
+  position: relative;
+}
+
+.interests-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.interests-section:hover .interests-image img {
+  opacity: 1;
+}
+
+.section-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+  font-weight: 300;
+}
+
+.about-section p {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.experience-item {
+  margin-bottom: 2rem;
+}
+
+.experience-item h3 {
+  color: #333;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-date {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.experience-item ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #666;
+}
+
+.experience-item li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.education-item {
+  margin-bottom: 1.5rem;
+}
+
+.education-item h3 {
+  color: #333;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-date {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .section-image {
+    order: -1;
+  }
+
+  .section-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}

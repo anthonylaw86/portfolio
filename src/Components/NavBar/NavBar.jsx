@@ -1,94 +1,45 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
-import logo from "../../../assets/logo.png";
-import menuIcon from "../../../assets/menu-bars.svg";
-import xIcon from "../../../assets/close-icon.svg";
-import icon from "../../../assets/pikaso.png";
-import { Link } from "react-scroll";
 
-const NavBar = ({ onNavigate }) => {
-  const [menu, setMenu] = useState("home");
-  const menuRef = useRef();
+const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const openMenu = () => {
-    menuRef.current.style.right = "0";
-  };
-
-  const closeMenu = () => {
-    menuRef.current.style.right = "-350px";
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <div className="navbar">
-      <img src={logo} alt="logo" className="navbar-logo" />
-      <img
-        src={menuIcon}
-        onClick={openMenu}
-        alt="menu icon"
-        className="nav-mob-open"
-      />
-      <ul ref={menuRef} className="nav-menu">
-        <img src={xIcon} onClick={closeMenu} alt="" className="nav-mob-close" />
-        <li>
-          <Link to="home" smooth={true} duration={500}>
-            <p
-              onClick={() => {
-                setMenu("home");
-                onNavigate("hero");
-              }}
-            >
-              Home
-            </p>
-          </Link>
-          {menu === "home" ? <img src={icon} alt="" /> : <></>}
-        </li>
-        <li>
-          <Link to="about" smooth={true} duration={500}>
-            <p
-              className="nav-link_about"
-              onClick={() => {
-                setMenu("about");
-                onNavigate("about");
-              }}
-            >
-              About Me
-            </p>
-          </Link>
-          {menu === "about" ? <img src={icon} alt="" /> : <></>}
-        </li>
-        <li>
-          <Link to="work" smooth={true} duration={500}>
-            <p
-              onClick={() => {
-                setMenu("work");
-                onNavigate("work");
-              }}
-            >
-              Portfolio
-            </p>
-          </Link>
-          {menu === "work" ? <img src={icon} alt="" /> : <></>}
-        </li>
-        <li>
-          <Link to="contact" smooth={true} duration={500}>
-            <p
-              onClick={() => {
-                setMenu("contact");
-                onNavigate("contact");
-              }}
-            >
-              Contact
-            </p>
-          </Link>
-          {menu === "contact" ? <img src={icon} alt="" /> : <></>}
-        </li>
-      </ul>
-      <div className="nav-connect">
-        <Link to="contact" smooth={true} duration={500}>
-          Connect With Me
+    <nav className="navbar">
+      <div className="navbar-brand">
+        <Link to="/">Anthony Law</Link>
+      </div>
+
+      <button className="menu-toggle" onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div className={`navbar-menu ${isMenuOpen ? "is-active" : ""}`}>
+        <Link to="/about" className="navbar-item">
+          About
+        </Link>
+        <Link to="/development" className="navbar-item">
+          Development
+        </Link>
+        <Link to="/real-estate" className="navbar-item">
+          Real Estate
+        </Link>
+
+        <Link to="/personal" className="navbar-item">
+          Personal
+        </Link>
+        <Link to="/contact" className="navbar-item">
+          Contact
         </Link>
       </div>
-    </div>
+    </nav>
   );
 };
 
