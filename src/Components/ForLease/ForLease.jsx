@@ -1,15 +1,9 @@
-import React, { useState } from "react";
 import ListingCard from "../ListingCard/ListingCard";
-import { property9149 } from "../../assets/images/realEstate/9149D/9149Data";
+import { properties } from "../../data/properties";
 import "./ForLease.css";
 
 const ForLease = () => {
-  const [selectedListing, setSelectedListing] = useState(null);
-
-  const listings = [property9149];
-
   const handleViewDetails = (listing) => {
-    setSelectedListing(listing);
     // Here you can implement modal or navigation to detailed view
     console.log("Viewing details for:", listing);
   };
@@ -18,7 +12,7 @@ const ForLease = () => {
     <div className="for-lease-container">
       <h2>Commercial Properties For Lease</h2>
       <div className="listings-grid">
-        {listings.map((listing) => (
+        {properties.map((listing) => (
           <ListingCard
             key={listing.id}
             listing={listing}

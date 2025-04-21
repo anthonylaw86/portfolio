@@ -26,9 +26,12 @@ const Home = () => {
             <h2>Development</h2>
             <p>Tech projects and solutions</p>
           </Link>
-          <Link to="/fitness" className="nav-card">
+          <Link to="/personal" className="nav-card">
             <h2>Fitness</h2>
-            <p>9+ years of training experience</p>
+            <p>
+              9+ years of bodybuilding experience, 2 beautiful pups & avid plant
+              enthusiast photos.
+            </p>
           </Link>
         </div>
       </div>
