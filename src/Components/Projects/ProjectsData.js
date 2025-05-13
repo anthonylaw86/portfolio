@@ -10,6 +10,10 @@ import darkDeco3 from "../../assets/images/development/darkDeco3.png";
 import darkDeco5 from "../../assets/images/development/darkDeco5.png";
 import volunQueer1 from "../../assets/images/development/VQLogo.png";
 import volunQueer2 from "../../assets/images/development/VQ1.png";
+import volunQueer3 from "../../assets/images/development/VQ2.png";
+import volunQueer4 from "../../assets/images/development/VQ3.png";
+import volunQueer5 from "../../assets/images/development/VQ4.png";
+import volunQueer6 from "../../assets/images/development/VQ5.png";
 
 const projects_data = [
   {
@@ -79,7 +83,14 @@ const projects_data = [
   {
     work_no: 5,
     work_name: "VolunQueer",
-    work_images: [volunQueer1, volunQueer2],
+    work_images: [
+      volunQueer1,
+      volunQueer2,
+      volunQueer3,
+      volunQueer4,
+      volunQueer5,
+      volunQueer6,
+    ],
     description:
       "A cross-platform mobile application connecting LGBTQ+ individuals with volunteer opportunities in their community. Built with React and Ionic for iOS and Android, featuring Supabase for backend services. Currently under development with a focus on creating a safe and inclusive space for community engagement.",
     technologies: [

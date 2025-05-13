@@ -12,8 +12,12 @@ export default defineConfig({
     "**/*.JPG",
     "**/*.jpg",
     "**/*.jpeg",
+    "**/*.JPEG",
+    "**/*.PNG",
     "**/*.png",
     "**/*.gif",
+    "**/*.GIF",
     "**/*.svg",
+    "**/*.SVG",
   ],
 });
