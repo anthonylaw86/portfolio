@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./About.css";
 import self1 from "../../assets/images/self/self1.png";
-import january from "../../assets/images/self/january.png";
+import headshot from "../../assets/images/self/headshot.JPG";
 import self_cropped from "../../assets/images/self/self_cropped.png";
 
 const About = () => {
@@ -62,13 +62,13 @@ const About = () => {
               </p>
             </div>
             <div className="section-image journey-image">
-              <img src={self_cropped} alt="Anthony Law" />
+              <img src={headshot} alt="Anthony Law" />
             </div>
           </div>
 
           <div className="about-section experience-section">
             <div className="section-image experience-image">
-              <img src={january} alt="Professional Work" />
+              <img src={self_cropped} alt="Professional Work" />
             </div>
             <div className="section-content">
               <h2>Professional Experience</h2>
